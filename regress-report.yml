@@ -1,0 +1,53 @@
+---
+test-cases:
+  - summary: |
+      Просмотр информации о товаре в каталоге
+    status: pass
+
+  - summary: |
+      Просмотр информации о товаре в карточке товара
+    status: pass
+
+  - summary: |
+      Добавление товара в корзину
+    status: pass
+
+  - summary: |
+      Просмотр содержимого корзины
+    status: pass
+
+  - summary: |
+      Оформление заказа
+    status: pass
+
+  - summary: |
+      Оплата заказа
+    status: fail
+
+  - summary: |
+      Фильтрация товаров по цене
+    status: pass
+
+  - summary: |
+      Фильтрация товаров по наличию
+    status: fail
+
+  - summary: |
+      Отбор товаров по ключевому слову
+    status: pass
+
+  - summary: |
+      Отбор товаров по категории
+    status: pass
+
+bugreports:
+  - summary: |
+      Короткое описание ошибки
+    environment: |
+      Ссылка на билд/коммит/версия ПО и всего окружения
+    steps-to-reproduce: |
+      Полный перечень шагов для воспроизведения, на каком шаге произошла ошибка
+    expected-result: |
+      Какой результат должен был быть без ошибки
+    actual-result: |
+      Какой результат получился на самом деле
