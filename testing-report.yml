@@ -35,6 +35,6 @@ status: pass
     Отбор товаров по ключевому слову
 status: pass
 
-  - summary: |
+- summary:
     Отбор товаров по категории
-  status: pass
+status: pass
