@@ -1,6 +1,6 @@
 ---
 - summary:    Просмотр информации о товаре в каталоге
-    status: pass
+status: pass
 ---
 - summary:    Просмотр информации о товаре в карточке товара
 status: pass
