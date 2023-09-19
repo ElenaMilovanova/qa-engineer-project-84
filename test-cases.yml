@@ -6,7 +6,7 @@ requirement: |
 prerequisites:
     Открыта начальная страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Открыть сайт
     - Переместиться вниз (вверх) страницы
@@ -23,7 +23,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Нажать на изображение товара
 expected-result: |
@@ -37,7 +37,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Нажать на кнопку "В корзину" выбранного товара
 expected-result: |
@@ -50,7 +50,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Нажать на кнопку "В корзину" выбранного товара
     - Нажать на пиктограмму "Корзина"
@@ -65,7 +65,7 @@ requirement: |
 prerequisites:
     Открыта корзина с выбранными товарами
 test-data: |
-    No date
+    No data
 steps:
     - Нажать на кнопку "Оформить заказ"
     - Закрыть окно заказа
@@ -80,7 +80,7 @@ requirement: |
 prerequisites:
     Открыто окно оформления заказа
 test-data: |
-    No date
+    No data
 steps:
     - Нажать на кнопку "Закрыть"
     - Произвести оплату
@@ -94,7 +94,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Указать нижний/верхний предел цены
 expected-result: |
@@ -107,7 +107,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Включить/выключить опцию "В наличии"
 expected-result: |
@@ -120,7 +120,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Ввести ключевое слово в строку поиска
 expected-result: |
@@ -133,7 +133,7 @@ requirement: |
 prerequisites:
     Открыта любая страница сайта
 test-data: |
-    No date
+    No data
 steps:
     - Выбрать категорию товара
 expected-result: |
