@@ -1,39 +1,39 @@
 ---
-- summary: |
+- summary:
     Просмотр информации о товаре в каталоге
-  status: pass
+status: pass
 
-- summary: |
+- summary:
     Просмотр информации о товаре в карточке товара
-  status: pass
+status: pass
 
-- summary: |
+- summary:
     Добавление товара в корзину
-  status: pass
+status: pass
 
-- summary: |
+- summary:
     Просмотр содержимого корзины
-  status: pass
+status: pass
 
-- summary: |
+- summary:
     Оформление заказа
-  status: pass
+status: pass
 
-- summary: |
+- summary:
     Оплата заказа
-  status: fail
+status: fail
 
-- summary: |
+- summary:
     Фильтрация товаров по цене
-  status: pass
+status: pass
 
-  - summary: |
+- summary:
     Фильтрация товаров по наличию
-  status: pass
+status: pass
 
-  - summary: |
+- summary:
     Отбор товаров по ключевому слову
-  status: pass
+status: pass
 
   - summary: |
     Отбор товаров по категории
