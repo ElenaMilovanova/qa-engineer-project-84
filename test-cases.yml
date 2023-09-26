@@ -99,110 +99,110 @@
   expected-result:
         На странице должны отобразиться товары, которые отнесены к данной категории.
 
-  - summary:        Отбор товаров по категории  по хэштегу
-    requirement:        Пользователь может отобрать товары по категории из карточки товара
-    prerequisites:        Открыта карточка любого товара
-    test-data:        No data
-    steps:
+- summary:        Отбор товаров по категории  по хэштегу
+  requirement:        Пользователь может отобрать товары по категории из карточки товара
+  prerequisites:        Открыта карточка любого товара
+  test-data:        No data
+  steps:
         - Нажать на хэштэг категории
-    expected-result:
+  expected-result:
         На странице должны отобразиться товары, которые отнесены к категории из карточки.
 
-  - summary:        Добавление нескольких разных товаров в корзину
-    requirement:        Пользователь добавляет несколько разных товаров в корзину
-    prerequisites:        Открыта страница сайта https://hexlet-products-store.vercel.app/
-    test-data:        No data
-    steps:
+- summary:        Добавление нескольких разных товаров в корзину
+  requirement:        Пользователь добавляет несколько разных товаров в корзину
+  prerequisites:        Открыта страница сайта https://hexlet-products-store.vercel.app/
+  test-data:        No data
+  steps:
         - Нажать на кнопку "В корзину" у нескольких разных товаров
-    expected-result:
+  expected-result:
         Товары должны добавиться в корзину отдельными строками.
 
-  - summary:        Добавление одинаковых товаров в корзину
-    requirement:        Пользователь добавляет один и тот же товар в корзину несколько раз
-    prerequisites:        Открыта страница сайта https://hexlet-products-store.vercel.app/
-    test-data:        No data
-    steps:
+- summary:        Добавление одинаковых товаров в корзину
+  requirement:        Пользователь добавляет один и тот же товар в корзину несколько раз
+  prerequisites:        Открыта страница сайта https://hexlet-products-store.vercel.app/
+  test-data:        No data
+  steps:
         - Нажать на кнопку "В корзину" у одного товара несколько раз
-    expected-result:
+  expected-result:
         Товары должны добавиться в корзину одной строкой с указанием соответствующего количества.
 
-  - summary:        Удаление товаров из корзины для случая, когда количество товаров = 1
-    requirement:        Пользователь удаляет товар из корзины
-    prerequisites:        Открыта корзина с выбранными товарами
-    test-data:        No data
-    steps:
+- summary:        Удаление товаров из корзины для случая, когда количество товаров = 1
+  requirement:        Пользователь удаляет товар из корзины
+  prerequisites:        Открыта корзина с выбранными товарами
+  test-data:        No data
+  steps:
         - Нажать кнопку Удалить у товара с количеством, равным 1
-    expected-result:
+  expected-result:
         Должна быть удалена строка с товаром полностью.
 
-  - summary:        Удаление товаров из корзины для случая, когда количество товаров > 1
-    requirement:        Пользователь удаляет товар из корзины
-    prerequisites:        Открыта корзина с выбранными товарами
-    test-data:        No data
-    steps:
+- summary:        Удаление товаров из корзины для случая, когда количество товаров > 1
+  requirement:        Пользователь удаляет товар из корзины
+  prerequisites:        Открыта корзина с выбранными товарами
+  test-data:        No data
+  steps:
         - Нажать кнопку Удалить у товара с количеством > 1
-    expected-result:
+  expected-result:
         Количество товара должно быть уменьшено на 1.
         
-  - summary:        Продолжение покупок из корзины по кнопке Продолжить покупки
-    requirement:        Пользователь переходит в каталог из корзины
-    prerequisites:        Открыта корзина с выбранными товарами
-    test-data:        No data
-    steps:
+- summary:        Продолжение покупок из корзины по кнопке Продолжить покупки
+  requirement:        Пользователь переходит в каталог из корзины
+  prerequisites:        Открыта корзина с выбранными товарами
+  test-data:        No data
+  steps:
         - Нажать кнопку Продолжить покупки
-    expected-result:
+  expected-result:
         Пользователь должен попасть на страницу, с какой был сделан переход в корзину.
 
-  - summary:        Продолжение покупок из корзины по кнопке Магазин
-    requirement:        Пользователь переходит на главную страницу сайта https://hexlet-products-store.vercel.app/ из корзины
-    prerequisites:        Открыта корзина с выбранными товарами
-    test-data:        No data
-    steps:
+- summary:        Продолжение покупок из корзины по кнопке Магазин
+  requirement:        Пользователь переходит на главную страницу сайта https://hexlet-products-store.vercel.app/ из корзины
+  prerequisites:        Открыта корзина с выбранными товарами
+  test-data:        No data
+  steps:
         - Нажать кнопку Магазин
-    expected-result:
+  expected-result:
         Пользователь должен попасть на главную страницу сайта https://hexlet-products-store.vercel.app/.
 
-  - summary:        Изменение языка сайта на Русский
-    requirement:        Пользователь меняет язык сайта на Русский
-    prerequisites:        Открыта любая страница сайта (каталог, карточка, корзина), кроме окна оформления заказа
-    test-data:        No data
-    steps:
+- summary:        Изменение языка сайта на Русский
+  requirement:        Пользователь меняет язык сайта на Русский
+  prerequisites:        Открыта любая страница сайта (каталог, карточка, корзина), кроме окна оформления заказа
+  test-data:        No data
+  steps:
         - Выбрать язык Русский
-    expected-result:
+  expected-result:
         Пользователь должен увидеть русифицированную версию сайта.
 
-  - summary:        Изменение языка сайта на English
-    requirement:        Пользователь меняет язык сайта на English
-    prerequisites:        Открыта любая страница сайта (каталог, карточка, корзина), кроме окна оформления заказа
-    test-data:        No data
-    steps:
+- summary:        Изменение языка сайта на English
+  requirement:        Пользователь меняет язык сайта на English
+  prerequisites:        Открыта любая страница сайта (каталог, карточка, корзина), кроме окна оформления заказа
+  test-data:        No data
+  steps:
         - Выбрать язык English
-    expected-result:
+  expected-result:
         Пользователь должен увидеть англоязычную версию сайта.
 
-  - summary:        Проверка в браузере Microsoft Edge
-    requirement:        Пользователь может просматривать сайт в браузере  Microsoft Edge
-    prerequisites:       Открыть сайт в браузере Microsoft Edge  
-    test-data:        No data
-    steps:
+- summary:        Проверка в браузере Microsoft Edge
+  requirement:        Пользователь может просматривать сайт в браузере  Microsoft Edge
+  prerequisites:       Открыть сайт в браузере Microsoft Edge  
+  test-data:        No data
+  steps:
         - Открыть сайт в браузере  Microsoft Edge
-    expected-result:
+  expected-result:
         Функционал сайта должен работать в данном браузере.
 
-  - summary:        Проверка в браузере Mozilla Firefox
-    requirement:        Пользователь может просматривать сайт в браузере  Mozilla Firefox
-    prerequisites:       Открыть сайт в браузере Mozilla Firefox  
-    test-data:        No data
-    steps:
+- summary:        Проверка в браузере Mozilla Firefox
+  requirement:        Пользователь может просматривать сайт в браузере  Mozilla Firefox
+  prerequisites:       Открыть сайт в браузере Mozilla Firefox  
+  test-data:        No data
+  steps:
         - Открыть сайт в браузере Mozilla Firefox
-    expected-result:
+  expected-result:
         Функционал сайта должен работать в данном браузере.
 
-  - summary:        Проверка в браузере Safari
-    requirement:        Пользователь может просматривать сайт в браузере  Safari
-    prerequisites:       Открыть сайт в браузере Safari 
-    test-data:        No data
-    steps:
+- summary:        Проверка в браузере Safari
+  requirement:        Пользователь может просматривать сайт в браузере  Safari
+  prerequisites:       Открыть сайт в браузере Safari 
+  test-data:        No data
+  steps:
         - Открыть сайт в браузере Safari
-    expected-result:
+  expected-result:
         Функционал сайта должен работать в данном браузере.
