@@ -1,6 +1,6 @@
 ---
 test-cases:
-      - summary:      Просмотр информации о товаре в каталоге
+      - summary:      Навигация по страницам каталога
         status: pass
 
       - summary:      Просмотр информации о товаре в карточке товара
@@ -27,7 +27,43 @@ test-cases:
       - summary:      Отбор товаров по ключевому слову
         status: pass
 
-      - summary:      Отбор товаров по категории
+      - summary:    Отбор товаров по категории из списка
+        status: pass
+
+      - summary:    Отбор товаров по категории по хэштегу
+        status: pass
+
+      - summary:    Добавление нескольких разных товаров в корзину
+        status: pass
+      
+      - summary:    Добавление одинаковых товаров в корзину
+        status: pass
+
+      - summary:    Удаление товаров из корзины для случая, когда количество товаров = 1
+        status: pass
+      
+      - summary:    Удаление товаров из корзины для случая, когда количество товаров > 1
+        status: pass
+      
+      - summary:    Продолжение покупок из корзины по кнопке Продолжить покупки
+        status: pass
+      
+      - summary:    Продолжение покупок из корзины по кнопке Магазин
+        status: pass
+
+      - summary:    Изменение языка сайта на Русский
+        status: fail
+      
+      - summary:    Изменение языка сайта на English
+        status: pass
+      
+      - summary:    Проверка в браузере Microsoft Edge
+        status: pass
+        
+      - summary:    Проверка в браузере Mozilla Firefox
+        status: pass
+        
+      - summary:    Проверка в браузере Safari
         status: pass
 
 bugreports:
