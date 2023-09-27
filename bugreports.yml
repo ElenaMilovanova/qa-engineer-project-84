@@ -566,3 +566,33 @@
   actual-result:
     Нет возможности отфильтровать товары по хэштэгу.
 
+- summary:
+    Проверка в браузере Mozilla Firefox на ошибки работы сайта в Devtools
+  environment:
+    Firefox Browser	117.0.1 (Официальная сборка) (64 бит)
+    ОС Ubunta 22.04    
+  steps-to-reproduce:
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    Открыть Devtools на вкладке Сеть
+  expected-result:
+    В списке запросов должны отсутствовать ошибки.
+  actual-result:
+    Ошибки по адресам - https://site/static/css/random.css; https://site/static/js/author.js; https://hexlet-products-store.vercel.app/english; 
+             https://hexlet-products-store.vercel.app/static/media/flag-ru.681be059a77988814a02724668aa2e3d.svg;
+             https://i.dummyjson.com/data/products/1/thumbnail.jpg.
+
+- summary:
+    Проверка в браузере Google Chrome на ошибки работы сайта в Devtools
+  environment:
+    Google Chrome Версия 112.0.5615.121 (Официальная сборка), (64 бит)
+    ОС Ubunta 22.04    
+  steps-to-reproduce:
+    Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+    Открыть Devtools на вкладке Сеть
+  expected-result:
+    В списке запросов должны отсутствовать ошибки.
+  actual-result:
+    Ошибки по адресам - https://site/static/css/random.css; https://site/static/js/author.js.
+                       
+            
+ 
