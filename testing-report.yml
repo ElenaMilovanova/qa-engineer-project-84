@@ -68,3 +68,8 @@
 - summary:    Наличие мобильной версии сайта
   status: fail
 
+- summary:    Тестирование на XSS строки поиска
+  status: pass
+
+- summary:    Тестирование на XSS полей отбора по цене
+  status: pass
