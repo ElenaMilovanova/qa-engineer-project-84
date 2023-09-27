@@ -63,9 +63,15 @@ test-cases:
       - summary:    Проверка в браузере Mozilla Firefox
         status: pass
         
-      - summary:    Проверка в браузере Safari
+      - summary:    Проверка в браузере Google Chrome на ошибки работы сайта в Devtools
         status: pass
-
+  
+      - summary:    Проверка в браузере Mozilla Firefox на ошибки работы сайта в Devtools
+        status: fail
+      
+      - summary:    Наличие мобильной версии сайта
+        status: fail
+        
 bugreports:
       - summary:      В нижней части окна висит посторонняя ссылка
         environment:
@@ -156,3 +162,15 @@ bugreports:
             Отобраны товары в соответствии с указанной в фильтре ценой и категорией/брендом.
         actual-result:
             При выборе бренда или категории при наличии границ цены не происходит отбор товара.
+
+      - summary:      Проверка в браузере Mozilla Firefox на ошибки работы сайта в Devtools
+        environment:
+            Firefox Browser	117.0.1 (Официальная сборка) (64 бит)
+            ОС Ubunta 22.04            
+        steps-to-reproduce:
+            Открыть главную страницу сайта https://hexlet-products-store.vercel.app/
+            Открыть Devtools на вкладке Сеть
+        expected-result:
+            В списке запросов должны отсутствовать ошибки.
+        actual-result:
+            Ошибки по адресам - https://i.dummyjson.com/data/products/1/thumbnail.jpg - https://i.dummyjson.com/data/products/30/thumbnail.jpg.
