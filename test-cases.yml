@@ -220,31 +220,31 @@
   expected-result:
         Список сетевых запросов в инструментах разработчика не должен содержать ошибки.
 
-  - summary:        Наличие мобильной версии сайта
-    requirement:        Пользователь может просматривать сайт на мобильном устройстве
-    prerequisites:       Открыть сайт на мобильном устройстве 
-    test-data:        No data
-    steps:
+- summary:        Наличие мобильной версии сайта
+  requirement:        Пользователь может просматривать сайт на мобильном устройстве
+  prerequisites:       Открыть сайт на мобильном устройстве 
+  test-data:        No data
+  steps:
         - Открыть сайт на любом мобильном устройстве
-    expected-result:
+  expected-result:
         Сайт должен корректно отображать информацию на мобильном устройстве и быть удобным для работы с ним.
 
-  - summary:        Тестирование на XSS строки поиска
-    requirement:        Тестирование строки поиска на уязвимость
-    prerequisites:       Открыть сайт  на главной странице https://hexlet-products-store.vercel.app/
-    test-data:        No data
-    steps:
+- summary:        Тестирование на XSS строки поиска
+  requirement:        Тестирование строки поиска на уязвимость
+  prerequisites:       Открыть сайт  на главной странице https://hexlet-products-store.vercel.app/
+  test-data:        No data
+  steps:
         - Открыть сайт на странице https://hexlet-products-store.vercel.app/
         - Ввести в строку поиска следующее - <h1>Hello</h1>
-    expected-result:
+  expected-result:
         Скрипт не должен выполниться.
 
-  - summary:        Тестирование на XSS полей отбора по цене
-    requirement:        Тестирование полей отбора по цене на уязвимость
-    prerequisites:       Открыть сайт  на главной странице https://hexlet-products-store.vercel.app/
-    test-data:        No data
-    steps:
+- summary:        Тестирование на XSS полей отбора по цене
+  requirement:        Тестирование полей отбора по цене на уязвимость
+  prerequisites:       Открыть сайт  на главной странице https://hexlet-products-store.vercel.app/
+  test-data:        No data
+  steps:
         - Открыть сайт на странице https://hexlet-products-store.vercel.app/
         - Ввести в поля отбора по цене следующее - <h1>Hello</h1>
-    expected-result:
+  expected-result:
         Скрипт не должен выполниться.
