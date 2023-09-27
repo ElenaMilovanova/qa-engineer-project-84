@@ -189,6 +189,17 @@
   expected-result:
         Функционал сайта должен работать в данном браузере.
 
+- summary:        Проверка в браузере Microsoft Edge на ошибки работы сайта в Devtools
+  requirement:        Пользователь может просматривать сайт в браузере  Microsoft Edge
+  prerequisites:       Открыть сайт в браузере Microsoft Edge  
+  test-data:        No data
+  steps:
+        - Открыть сайт в браузере  Microsoft Edge
+        - Открыть Devtools
+        - Перейти на вкладку Сеть
+  expected-result:
+        Список сетевых запросов в инструментах разработчика не должен содержать ошибки.
+
 - summary:        Проверка в браузере Mozilla Firefox
   requirement:        Пользователь может просматривать сайт в браузере  Mozilla Firefox
   prerequisites:       Открыть сайт в браузере Mozilla Firefox  
@@ -198,11 +209,13 @@
   expected-result:
         Функционал сайта должен работать в данном браузере.
 
-- summary:        Проверка в браузере Safari
-  requirement:        Пользователь может просматривать сайт в браузере  Safari
-  prerequisites:       Открыть сайт в браузере Safari 
+- summary:        Проверка в браузере Mozilla Firefox на ошибки работы сайта в Devtools
+  requirement:        Пользователь может просматривать сайт в браузере  Mozilla Firefox
+  prerequisites:       Открыть сайт в браузере Mozilla Firefox 
   test-data:        No data
   steps:
-        - Открыть сайт в браузере Safari
+        - Открыть сайт в браузере  Mozilla Firefox
+        - Открыть Devtools
+        - Перейти на вкладку Сеть
   expected-result:
-        Функционал сайта должен работать в данном браузере.
+        Список сетевых запросов в инструментах разработчика не должен содержать ошибки.
