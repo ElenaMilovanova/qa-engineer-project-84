@@ -59,9 +59,12 @@
 - summary:    Проверка в браузере Microsoft Edge
   status: pass
 
-- summary:    Проверка в браузере Microsoft Edge на ошибки работы сайта в Devtools
+- summary:    Проверка в браузере Google Chrome на ошибки работы сайта в Devtools
   status: fail
   
 - summary:    Проверка в браузере Mozilla Firefox на ошибки работы сайта в Devtools
+  status: fail
+
+- summary:    Наличие мобильной версии сайта
   status: fail
 
