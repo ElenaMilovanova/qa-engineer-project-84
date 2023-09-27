@@ -189,12 +189,12 @@
   expected-result:
         Функционал сайта должен работать в данном браузере.
 
-- summary:        Проверка в браузере Microsoft Edge на ошибки работы сайта в Devtools
-  requirement:        Пользователь может просматривать сайт в браузере  Microsoft Edge
-  prerequisites:       Открыть сайт в браузере Microsoft Edge  
+- summary:        Проверка в браузере Google Chrome на ошибки работы сайта в Devtools
+  requirement:        Пользователь может просматривать сайт в браузере  Google Chrome
+  prerequisites:       Открыть сайт в браузере Google Chrome  
   test-data:        No data
   steps:
-        - Открыть сайт в браузере  Microsoft Edge
+        - Открыть сайт в браузере  Google Chrome
         - Открыть Devtools
         - Перейти на вкладку Сеть
   expected-result:
